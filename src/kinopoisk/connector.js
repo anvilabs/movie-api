@@ -10,7 +10,8 @@ import {userAgent, applyQueryToUrl} from '../utils';
 
 const KINOPOISK_API_ROOT = 'https://ext.kinopoisk.ru/ios/5.0.0';
 
-const KINOPOISK_REQUEST_HEADERS_API_URL = 'https://plex.filmingdata.com/reqh';
+const KINOPOISK_REQUEST_HEADERS_API_URL =
+  'https://kinopoisk-headers.codobred.now.sh/';
 
 type Endpoint =
   // Movie info
@@ -63,7 +64,7 @@ class KinopoiskConnector {
       'Image-Scale': '3',
       cityID: '1',
       countryID: '2',
-      'User-Agent': 'Android client (4.4 / api19), ru.kinopoisk/4.0.2 (52)',
+      'User-Agent': 'Android client (4.4 / api19), ru.kinopoisk/4.2.0 (55)',
       device: 'android',
       'Android-Api-Version': '19',
       clientDate: moment(new Date()).format('HH:mm dd.MM.YYYY'),
